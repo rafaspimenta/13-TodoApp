@@ -1,4 +1,4 @@
-# Asp Net Web API + NGINX reverse proxy + Simple frontend using javascript, html and css
+# Asp Net Web API + NGINX reverse proxy + frontend using javascript, html and css + containers
 
 ![image](https://github.com/rafaspimenta/TodoApp/assets/19673696/83464735-5ffc-40ca-8c9f-023d5c5d4379)
 
