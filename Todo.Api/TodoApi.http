@@ -1,0 +1,32 @@
+﻿@TodoApi_HostAddress = http://localhost:5000
+
+GET {{TodoApi_HostAddress}}/api/todoitems
+
+###
+
+POST {{TodoApi_HostAddress}}/api/todoitems
+Content-Type: application/json
+
+{
+  "name": "cleber",
+  "isComplete": true
+}
+
+###
+
+GET {{TodoApi_HostAddress}}/api/todoitems/0
+
+###
+
+DELETE {{TodoApi_HostAddress}}/api/todoitems/0
+
+###
+
+PUT {{TodoApi_HostAddress}}/api/todoitems/0
+Content-Type: application/json
+
+{
+  //TodoItemDTO
+}
+
+###
