@@ -1,4 +1,4 @@
-# Asp Net Web API + simple frontend using javascript, html and css
+# Asp Net Web API + NGINX reverse proxy + Simple frontend using javascript, html and css
 
 ## This simple app is composed by:
 - Controller-based web API
