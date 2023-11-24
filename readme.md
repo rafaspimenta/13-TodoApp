@@ -2,8 +2,10 @@
 
 ## This simple app is composed by:
 - Controller-based web API
-- In memory database
-- Javascript frontend using html and css
+- NGINX reverse proxy
+- In-memory database using EF Core
+- Javascript frontend using HTML and CSS
+- Docker files for the API and the NGINX
 
 ## Start Web API
 You should go to the root folder and execute the .NET Core command line:
