@@ -26,6 +26,15 @@ services:
     restart: unless-stopped
     networks:
       - nginx-network
+  ui:
+    build:
+      context: './Todo.UI'
+      dockerfile: Dockerfile
+    expose:
+      - 5500
+    restart: unless-stopped
+    networks:
+      - nginx-network
 networks:
   nginx-network:
     driver: bridge

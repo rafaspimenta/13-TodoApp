@@ -1,19 +1,23 @@
 # Asp Net Web API + NGINX reverse proxy + Simple frontend using javascript, html and css
 
 ## This simple app is composed by:
-- Controller-based web API
+- API: Controller-based ASP NET Web API
 - NGINX reverse proxy
-- In-memory database using EF Core
-- Javascript frontend using HTML and CSS
-- Docker files for the API and the NGINX
+- Database: In-memory using EF Core
+- Frontend: Javascript frontend using HTML and CSS
+- Node express to host the frontend
+- Dockerfiles and docker-compose to run the multiple container applications
 
 ## Start Web API
-You should go to the root folder and execute the .NET Core command line:
+Go to the Todo.Api folder and execute the .NET Core command:
 	
 	dotnet run --launch https
 
-## Start the JS frontend
-	Open the index.html from the Todo.UI folder using the live server extension from VS Code
+## Start the JS frontend (port 5500)
+Go to the Todo.Ui folder and execute the following commands:
+
+	npm install
+	node ./server.js
 
 ## API endpoints
 	It can be taken from the swagger: https://localhost:[port]/swagger/index.html or the TodoApi.http file
@@ -21,6 +25,7 @@ You should go to the root folder and execute the .NET Core command line:
 
 
 ## Production mode
-It will run the API in a nginx reverse proxy that will expose the port 80.
+It will run the API in a nginx reverse proxy that will expose the port 80 and the frontend in the 5500 port.
 
+	docker compose build
 	docker compose up
